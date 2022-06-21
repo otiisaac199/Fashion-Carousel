@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace monospace;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background: black;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+
+.section .left,
+.section .right {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.section .slider {
+  width: 1000px;
+  height: auto;
+  overflow: hidden;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: glow 2s ease-in-out infinite;
+          animation: glow 2s ease-in-out infinite;
+}
+
+.section .slider .slider-content {
+  cursor: pointer;
+  width: 300px;
+  height: 470px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section .slider .slider-content h3,
+.section .slider .slider-content p {
+  width: 100%;
+  padding: 5px 0;
+  background: #99406d;
+  color: #fff;
+}
+
+.section .slider .slider-content img {
+  width: 300px;
+  height: 100%;
+}
+
+.section i {
+  color: #000;
+  font-size: 28px;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  background-color: black;
+  font-size: 20px;
+}
+
+@-webkit-keyframes glow {
+  40% {
+    border-color: yellowgreen;
+  }
+  60% {
+    border-color: #7474ff;
+  }
+  80% {
+    border-color: red;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+@keyframes glow {
+  40% {
+    border-color: yellowgreen;
+  }
+  60% {
+    border-color: #7474ff;
+  }
+  80% {
+    border-color: red;
+  }
+  100% {
+    border-color: black;
+  }
+}
+/*# sourceMappingURL=style.css.map */
