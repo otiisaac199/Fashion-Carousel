@@ -1,3 +1,20 @@
+import { slidesItems } from "./app2.js";
+
+const sliderContainer = document.querySelector(".slider");
+
+const slideItemCont = slidesItems.map((_el) => {
+  return `
+   <div class="slider-content">
+      <img src="${_el._photo}" alt="" />
+      <h3>${_el._name}</h3>
+      <p>${_el._writeUp}</p>
+  </div>`;
+});
+
+sliderContainer.innerHTML = slideItemCont.join(" ");
+
+// slider
+
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 

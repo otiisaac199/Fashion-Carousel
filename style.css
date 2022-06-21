@@ -73,7 +73,9 @@ body {
 .section .slider .slider-content h3,
 .section .slider .slider-content p {
   width: 100%;
-  padding: 5px 0;
+  padding: 5px 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #99406d;
   color: #fff;
 }
